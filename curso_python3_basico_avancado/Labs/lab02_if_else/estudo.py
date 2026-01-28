@@ -27,14 +27,14 @@
 
 # 2. Estrutura básica do if
 
-if condição:
+# if condição:
     # bloco executado se condição for verdadeira
 
 # Exemplo:
 
-idade = 20
-if idade >= 18:
-    print("Maior de idade")
+# idade = 20
+# if idade >= 18:
+#     print("Maior de idade")
 
 # 3. Estrutura completa: if, elif, else
 
