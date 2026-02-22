@@ -17,3 +17,8 @@ elif condicao4:
 else:
     print('Nemhuma condição foi satisfeta.')
 print('FORA DO IF')
+
+if 10 == 10:
+    print('Outro if')
+
+print('Fora do if')
