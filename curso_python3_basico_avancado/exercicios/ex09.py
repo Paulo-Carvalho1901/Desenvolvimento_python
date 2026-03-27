@@ -17,6 +17,10 @@ while True:
 
     numeros_validos = None # Bandeira (flag)
 
+    # Definindo variavel fora do bloco
+    numero_1_flot = 0
+    numero_2_flot = 0
+
     # Aqui um ponto importante, poderia no lugar de try, except 
     # utilizar isdigit() para validar se que o úsuario enviou é realmente um número
 
@@ -47,6 +51,17 @@ while True:
     if len(operador) > 1:
         print('Digite apenas 1 operador')
         continue # volta no inicio pedindo para solicitar os números novamente
+
+    # Realizando calculos
+    print('Realizando sua conta, confiira seu resultado abaixo:')
+    if operador == '+':
+        print(f'{numero_1_flot} + {numero_2_flot} =', numero_1_flot + numero_2_flot)
+    if operador == '-':
+        print(f'{numero_1_flot} - {numero_2_flot} =', numero_1_flot - numero_2_flot)
+    if operador == '*':
+        print(f'{numero_1_flot} * {numero_2_flot} =', numero_1_flot * numero_2_flot)
+    if operador == '/':
+        print(f'{numero_1_flot} / {numero_2_flot} =', numero_1_flot / numero_2_flot)
 
     sair = input('Quer sair? [s]im: ').lower().startswith('s')
     
