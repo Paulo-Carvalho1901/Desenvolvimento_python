@@ -6,18 +6,23 @@ iter -> me entrega o seu iterador
 """
 
 # entendendo como for funciona
-texto = iter('Paulo') # __iter__()
+# texto = iter('Paulo') # __iter__()
 
-print(texto.__next__())
-print(texto.__next__())
-print(texto.__next__())
-print(texto.__next__())
-print(texto.__next__())
-print(texto.__next__())
+# print(next(texto))
+# print(next(texto))
+# print(next(texto))
+# print(next(texto))
+# print(next(texto))
+# print(next(texto))
 
+# exeplo pratico de como funciona
 
-# numeros = range(5, 10, 1)
+texto = 'Paulo' # iterável
+iterador = iter(texto) # iterador
 
-# for numero in numeros:
-#     print(numero)
-
+while True:
+    try:
+        letra = next(iterador)
+        print(letra)
+    except StopIteration: 
+        break
