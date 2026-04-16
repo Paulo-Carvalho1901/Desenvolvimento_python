@@ -18,11 +18,14 @@ iter -> me entrega o seu iterador
 # exeplo pratico de como funciona
 
 texto = 'Paulo' # iterável
-iterador = iter(texto) # iterador
+# iterador = iter(texto) # iterador
 
-while True:
-    try:
-        letra = next(iterador)
-        print(letra)
-    except StopIteration: 
-        break
+# while True:
+#     try:
+#         letra = next(iterador)
+#         print(letra)
+#     except StopIteration: 
+#         break
+
+for letra in texto:
+    print(letra)
