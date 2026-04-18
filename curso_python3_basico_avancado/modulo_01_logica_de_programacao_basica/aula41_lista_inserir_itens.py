@@ -21,5 +21,6 @@ lista.append(123)
 del lista[-1] # deletando item pelo indice
 # lista.clear() # limpando lista
 lista.insert(0, 5) # lista.insert(qual indice, o valor do item)
-print(lista)
-
+# lista.insert(5, 'Paulo')
+lista.insert(100, 50)
+print(lista[5]) 
