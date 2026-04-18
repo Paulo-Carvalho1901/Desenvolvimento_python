@@ -16,8 +16,10 @@ Criar, ler, alterar, apagar = lista[i] (CRUD)
 """
 lista = [10, 20, 30, 40]
 lista.append("Paulo") # adicionei
-nome = lista.pop() # removi
+nome = lista.pop() # Se passar o indice ele remove pelo indice, se não removi o ultimo item
 lista.append(123)
 del lista[-1] # deletando item pelo indice
 # lista.clear() # limpando lista
+lista.insert(0, 5) # lista.insert(qual indice, o valor do item)
 print(lista)
+
